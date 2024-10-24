@@ -89,7 +89,7 @@ namespace LinkedListGeneric
 
 
             Element<T>? current = _start;
-            int elementCounter = 1;             //Startet auf eins, da die Reffernz von current.Next überprüft wird, welcher aktueller index + 1 ist. (Auf den Startindex 0 wurde zu beginn überprüft.)
+            int elementCounter = 1;             //Startet auf eins, da die Reffernz von current.Next überprüft wird, welcher aktueller Index + 1 ist. (Auf den Startindex 0 wurde zu beginn überprüft.)
             while (index != elementCounter)
             {
                 current = current!.LinkedTo!;
@@ -99,7 +99,7 @@ namespace LinkedListGeneric
             Count--;
         }
 
-        public void RemoveAllOf(T item)             //Löscht ALLE Einträge des gesuchten Wertes in der Liste.
+        public void RemoveAllOf(T item)             
         {
             if (_start == null) return;
             Element<T>? current = _start;

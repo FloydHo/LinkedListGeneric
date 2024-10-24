@@ -23,18 +23,7 @@ namespace LinkedListGeneric
         {
             if (!Contains(item))
             {
-                Element<T> newElement = new Element<T>(item, null);
-                if (_start == null)
-                {
-                    _start = newElement;
-                    _end = _start;
-                }
-                else
-                {
-                    _end!.LinkedTo = newElement;
-                    _end = newElement;
-                }
-                Count++;                
+                base.Add(item);
             }
         }
 

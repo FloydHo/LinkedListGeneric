@@ -12,7 +12,8 @@
         {
             SimpleList<int> intList1 = new SimpleList<int>(1, 2, 3);
             SimpleList<int> intList2 = new SimpleList<int>(3, 4, 5, 4, 3 ,6 ,7 ,8 ,3);
-
+            SimpleList<int> intList5 = new SimpleList<int>();
+            int[] arr5 = intList5.ToArray();
             intList1.Add(100);
 
             int[] arr1 = intList1.ToArray();
