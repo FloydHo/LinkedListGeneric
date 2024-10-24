@@ -35,7 +35,7 @@ namespace LinkedListGeneric
             return mergedSet;
         }
 
-        public void AddAllElementsTo(ref SimpleSet<T> newSet)
+        private void AddAllElementsTo(ref SimpleSet<T> newSet)
         {
             Element<T>? current = _start;
 
